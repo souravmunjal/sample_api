@@ -7,6 +7,9 @@ ls_months={'Jan':1,'Feb':2,'Mar':3,'Apr':4,'May':5,'June':6,'July':7,'Aug':8,'Se
 def getTheMaximumProfit():
 	json_= request.get_json(force=True)
 	full_ls=[]
+	#0 th index represents start date
+	#1 th index represents end date
+	#2 th index represents movie name;
 	for i in json_:
 		ls=[]
 		ls.append(str(ls_months[i['end_date'].split(' ')[1]])+i['end_date'].split(' ')[0])
