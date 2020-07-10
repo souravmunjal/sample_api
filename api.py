@@ -29,7 +29,7 @@ def getTheMaximumProfit():
 			end_time=int(i[0])
 			start_time=int(i[1])
 	
-	return jsonify({"ans":str(movies_name),"total_money":str(len(movies_name))+"crores"})
+	return jsonify({"ans":movies_name,"total_money":str(len(movies_name))+"crores"})
 
 
 if __name__ == '__main__':
